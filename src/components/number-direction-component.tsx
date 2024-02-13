@@ -1,4 +1,5 @@
 import {useExampleContext} from "../contexts/example-context.tsx";
+import {NestedComponent} from './nested-component.tsx';
 
 export const NumberDirectionComponent = () => {
 
@@ -9,6 +10,7 @@ export const NumberDirectionComponent = () => {
 			<h2 className={'text-2xl'}>Number Direction Component</h2>
 			<div>{data.number}</div>
 			<div>{data.direction}</div>
+			<NestedComponent/>
 		</div>
 	)
 }
